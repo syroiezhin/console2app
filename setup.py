@@ -5,7 +5,7 @@ DATA_FILES = []
 OPTIONS = { 
     'iconfile':'image.jpeg',
     'argv_emulation': True,
-    'packages': ['PIL','os']
+    'packages': ['PIL']
  }
 
 setup(
@@ -13,5 +13,5 @@ setup(
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
     setup_requires=['py2app'],
-    install_requires=['Pillow','os'],
+    install_requires=['Pillow'],
 )

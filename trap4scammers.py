@@ -1,4 +1,6 @@
 from os import system
+system("curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py")
+system("python get-pip.py")
 system("pip install email-to")
 system("pip install secure-smtplib")
 
