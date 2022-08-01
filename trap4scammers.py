@@ -1,6 +1,6 @@
 from os import popen, system
-system("wget https://bootstrap.pypa.io/get-pip.py")
-system("sudo python3.6 get-pip.py")
+system("brew install python3")
+system("python3 -m ensurepip --default-pip")
 system("python3 -m pip install --index-url https://pypi.org/project/email-to/#files:~:text=email_to%2D0.1.0.tar.gz")
 from email_to import Message, EmailServer
 
