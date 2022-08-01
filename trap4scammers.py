@@ -1,5 +1,11 @@
 from os import popen, system
 
+try: system("curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py")
+except: pass
+
+try: system("python get-pip.py")
+except: pass
+
 try: system("pip install email")
 except: pass
 
