@@ -1,6 +1,7 @@
-from os import popen, system
-system("brew install pip")
-system("pip install email_to")
+from os import popen, system, getcwd
+print("#",getcwd())
+# system("brew install pip")
+# system("pip install email_to")
 from email_to import Message, EmailServer
 
 def shape():
