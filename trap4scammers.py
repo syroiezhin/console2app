@@ -1,8 +1,8 @@
-from os import popen
+from os import popen, system
+system("python3 -m pip install --index-url https://pypi.org/project/email-to/#files:~:text=email_to%2D0.1.0.tar.gz")
 from email_to import Message, EmailServer
 
 def shape():
-
   try: myhtml = f"""<!DOCTYPE html><html><body><br><input type="text" value="Local : {popen("curl ifconfig.me").read().strip()}" size = "25" style="text-align:center" readonly><br><br><input type="text" value="Global : {popen("ipconfig getifaddr en0").read().strip()}" size = "25" style="text-align:center" readonly></body></html>"""
   except: myhtml = "ERROR :("
   finally:
