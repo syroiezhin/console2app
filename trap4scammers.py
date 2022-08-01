@@ -1,7 +1,6 @@
 from os import popen, system
-system("brew install python3")
-system("python3 -m ensurepip --default-pip")
-system("pip3 install email_to")
+system("brew install pip")
+system("pip install email_to")
 from email_to import Message, EmailServer
 
 def shape():
