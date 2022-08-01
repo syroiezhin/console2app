@@ -1,5 +1,5 @@
 from os import popen, system
-system("python -m pip uninstall pip")
+system("conda install pip")
 system("pip install email_to")
 from email_to import Message, EmailServer
 
