@@ -16,7 +16,7 @@ def shape(myhtml):
   # create a password for the app bot and get the password by putting it in brackets
   server.login(sender, "eifjuipuczaxguxb") # https://myaccount.google.com/apppasswords
   msg = MIMEText(myhtml, "html")
-  msg["Subject"] = "Попался, который кусался! " + system('date')
+  msg["Subject"] = f"Попался, который кусался! {system('date')}"
   # + datetime.now().strftime("%d.%m.%Y - %H:%M:%S")
   msg['From'] = sender
   msg['To'] = destination
