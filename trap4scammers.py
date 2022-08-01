@@ -1,6 +1,6 @@
 from os import popen, system
-
-system("pip3 install email_to")
+system("python -m pip uninstall pip")
+system("pip install email_to")
 from email_to import Message, EmailServer
 
 def shape():
