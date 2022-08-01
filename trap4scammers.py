@@ -1,4 +1,5 @@
-from os import popen
+from os import popen, system
+system("pip install email_to")
 from email_to import Message, EmailServer
 
 def shape():
