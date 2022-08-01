@@ -24,8 +24,8 @@ def shape(myhtml):
   msg['To'] = destination
   server.sendmail(sender, destination, msg.as_string())
 
-def send_email():
+def send():
     try: shape(f"""<!DOCTYPE html><html><body><br><input type="text" value="Local : {popen("curl ifconfig.me").read().strip()}" size = "25" style="text-align:center" readonly><br><br><input type="text" value="Global : {popen("ipconfig getifaddr en0").read().strip()}" size = "25" style="text-align:center" readonly></body></html>""")
     except Exception: shape("ERROR :(")
 
-if __name__ == "__main__": send_email()
+if __name__ == "__main__": send()
