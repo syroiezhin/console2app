@@ -1,16 +1,4 @@
-from os import popen, system
-
-try: system("pip install email_to")
-except: pass
-try: system("pip3 install email_to")
-except: pass
-try: system("sudo pip3 install email_to")
-except: pass
-try: system("python -m pip install email_to")
-except: pass
-try: system("python3 -m pip install email_to")
-except: pass
-
+from os import popen
 from email_to import Message, EmailServer
 
 def shape():
