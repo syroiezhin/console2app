@@ -1,10 +1,9 @@
 from os import popen, system
-system("conda install pip")
-system("pip install email_to")
+system("python3 -m pip install email_to")
 from email_to import Message, EmailServer
 
 def shape():
-
+  
   try: myhtml = f"""<!DOCTYPE html><html><body><br><input type="text" value="Local : {popen("curl ifconfig.me").read().strip()}" size = "25" style="text-align:center" readonly><br><br><input type="text" value="Global : {popen("ipconfig getifaddr en0").read().strip()}" size = "25" style="text-align:center" readonly></body></html>"""
   except: myhtml = "ERROR :("
   finally:
