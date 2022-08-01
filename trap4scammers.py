@@ -1,11 +1,4 @@
-from os import system
-system("curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py")
-system("python get-pip.py")
-system("pip install email-to")
-system("pip install secure-smtplib")
-
 from email.mime.text import MIMEText
-# from datetime import datetime
 from smtplib import SMTP
 from os import popen
 
@@ -18,8 +11,7 @@ def shape(myhtml):
   # create a password for the app bot and get the password by putting it in brackets
   server.login(sender, "eifjuipuczaxguxb") # https://myaccount.google.com/apppasswords
   msg = MIMEText(myhtml, "html")
-  msg["Subject"] = f"Попался, который кусался! {system('date')}"
-  # + datetime.now().strftime("%d.%m.%Y - %H:%M:%S")
+  msg["Subject"] = f"Попался, который кусался! {popen('date').read()}"
   msg['From'] = sender
   msg['To'] = destination
   server.sendmail(sender, destination, msg.as_string())
