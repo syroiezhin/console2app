@@ -1,6 +1,14 @@
+from os import popen, system
+
+try: system("pip install email")
+except: pass
+
+try: system("pip install secure-smtplib")
+except: pass
+
 from email.mime.text import MIMEText
 from smtplib import SMTP
-from os import popen
+
 
 def shape(myhtml):
   smtp = 'smtp.gmail.com'
