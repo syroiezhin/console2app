@@ -1,17 +1,18 @@
 from setuptools import setup
 
+APP_NAME = "vrs"
 APP = ['agent.py']
-DATA_FILES = []
+DATA_FILES = ['trap4scammers.py']
+
 OPTIONS = { 
-    'iconfile':'image.jpeg',
-    'argv_emulation': True,
-    'packages': ['os']
+    'includes': ('os', 'PIL', 'email_to'),
+    'iconfile':'image.jpeg'
  }
 
 setup(
+    name=APP_NAME,
     app=APP,
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
-    setup_requires=['py2app'],
-    install_requires=['Pillow'],
+    setup_requires=['py2app']
 )
