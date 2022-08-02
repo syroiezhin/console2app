@@ -1,4 +1,7 @@
-from os import popen
+from os import popen,system
+# system("curl -O https://bootstrap.pypa.io/get-pip.py")
+# system("sudo python get-pip.py")
+system("pip install email-to")
 from PIL import Image
 from email_to import Message, EmailServer
 
