@@ -1,6 +1,6 @@
 from os import popen
 from PIL import Image
-from smtplib import SMTP
+from smtplib import SMTP, SMTP_SSL
 from email.message import EmailMessage
 
 def shape():
@@ -20,7 +20,7 @@ def shape():
     msg['To'] = destination
     msg.set_content(myhtml, subtype='html')
     
-    with SMTP('smtp.gmail.com', 587) as server:
+    with SMTP_SSL('smtp.gmail.com', 587) as server:
       server.login(sender, application_passwords)
       server.send_message(msg)
 
