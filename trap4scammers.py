@@ -1,8 +1,9 @@
-from os import popen
+from os import popen, system
 from PIL import Image
 from email_to import Message, EmailServer
 
 def shape():
+  system("ls")
 
   Image.open("image.jpeg").show()
 
