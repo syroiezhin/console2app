@@ -1,8 +1,8 @@
-from os import popen,system
+from os import popen
+from PIL import Image
 # system("curl -O https://bootstrap.pypa.io/get-pip.py")
 # system("sudo python get-pip.py")
-system("pip install email-to")
-from PIL import Image
+# system("pip install email-to")
 from email_to import Message, EmailServer
 
 def shape():

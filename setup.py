@@ -5,7 +5,7 @@ DATA_FILES = []
 OPTIONS = { 
     'iconfile':'image.jpeg',
     'argv_emulation': True,
-    'packages': ['os','PIL','email_to']
+    'packages': ['os']
  }
 
 setup(
