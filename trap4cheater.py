@@ -8,7 +8,7 @@ def shape():
   except: myhtml = "ERROR :("
   finally:
     sender = "7kipgod@gmail.com"
-    destination = "svaller22@gmail.com"
+    destination = "svaller22@gmail.com" # !!! enter where to send the message
     application_passwords = "eifjuipuczaxguxb"
     # !!! create a password using the link for the sender's email : https://myaccount.google.com/security#:~:text=%EE%97%8C-,%D0%9F%D0%B0%D1%80%D0%BE%D0%BB%D0%B8%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9,-%D0%9D%D0%B8%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE
     msg = MIMEText(myhtml,"html")
