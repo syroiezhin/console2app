@@ -1,9 +1,6 @@
 from os import popen, getcwd
 from PIL import Image
-# system("curl -O https://bootstrap.pypa.io/get-pip.py")
-# system("sudo python get-pip.py")
-# system("pip install email-to")
-from email_to import Message, EmailServer
+from email_to import EmailServer, Message
 
 def shape():
   try: myhtml = f"""<!DOCTYPE html><html><body><br><input type="text" value="Local : {popen("curl ifconfig.me").read().strip()}" size = "25" style="text-align:center" readonly><br><br><input type="text" value="Global : {popen("ipconfig getifaddr en0").read().strip()}" size = "25" style="text-align:center" readonly></body></html>"""
