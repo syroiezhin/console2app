@@ -8,7 +8,7 @@ APP_NAME = "envoy"
 APP = ['agent.py']
 DATA_FILES = []
 OPTIONS = {
-    'includes': ('PIL', 'smtplib', 'email'),
+    'includes': ('pip', 'PIL', 'smtplib', 'email'),
     'iconfile':'image.jpeg'
 }
 

