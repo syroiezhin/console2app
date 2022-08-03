@@ -1,6 +1,4 @@
-from os import popen, system, getcwd
-system("pip install email_to")
-system("pip install Pillow")
+from os import popen, getcwd
 from PIL import Image
 from email_to import EmailServer, Message
 '''
