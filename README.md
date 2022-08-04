@@ -109,6 +109,5 @@ conda remove zeromq
 ```
 conda install zeromq
 ```
-> 
 
 [⇪](#UP)
