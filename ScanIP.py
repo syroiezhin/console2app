@@ -1,8 +1,11 @@
 from os import popen, getcwd, system
-from time import sleep
+
 system("pip install Pillow")
+# system("python3 -m pip install --upgrade pip")
+# system("python3 -m pip install --upgrade Pillow")
 
 from PIL import Image
+from time import sleep
 from smtplib import SMTP
 from email.mime.text import MIMEText
 
@@ -27,4 +30,4 @@ def shape():
 if __name__ == "__main__": 
   Image.open(f"{getcwd()}/finder/image.jpeg").show()
   shape()
-  sleep(15)
+  sleep(60)
