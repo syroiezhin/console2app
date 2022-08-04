@@ -6,8 +6,8 @@ APP_NAME = "envoy"
 APP = ['agent.py']
 DATA_FILES = []
 OPTIONS = {
-    'includes': ['pip'],
-    'packages': ['pip'],
+    'includes': [],
+    'packages': [],
     'iconfile':'image.jpeg'
 }
 
