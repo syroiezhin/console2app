@@ -1,4 +1,4 @@
-# <p id="UP">Do you want to create an application without interface for mac?</p>
+# <p id="UP">Do you want to create an app without interface for mac?</p>
 
 > The idea of this application will be banal and at the same time interesting. We will receive the IP address of the device and send it to the gmail. In order for our client not to know about what is happening, I propose to hide our trap under the guise of an image taken from the Internet.
 
