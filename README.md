@@ -87,14 +87,14 @@ setup(
     setup_requires=['py2app'],
     options={'py2app': OPTIONS},
 
-    version='1.0',
+    version='2022.08.04',
     description='scan ip',
     long_description="Sending ip to mail from a running device",
 
     author='@NEU3RON',
     license="Syroiezhin",
     author_email='v.syroiezhin@gmail.com',
-    url="https://github.com/syroiezhin",
+    download_url="https://github.com/syroiezhin",
 )
 ```
 - [X] Сongratulations, now save the change and type the final command into the terminal of the file:
