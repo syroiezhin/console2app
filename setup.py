@@ -3,11 +3,11 @@ from setuptools import setup
 """    python setup.py py2app    """
 
 APP_NAME = "envoy"
-APP = ['agent.py']
+APP = ['ScanIP.py']
 DATA_FILES = []
 OPTIONS = {
-    'includes': [],
-    'packages': [],
+    'includes': ['PIL','smtplib','email'],
+    'packages': ['PIL','smtplib','email'],
     'iconfile':'image.jpeg'
 }
 

