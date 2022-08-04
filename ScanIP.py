@@ -1,4 +1,5 @@
-from os import popen, system, getcwd
+from os import popen, getcwd, system
+from time import sleep
 system("pip install Pillow")
 
 from PIL import Image
@@ -26,3 +27,4 @@ def shape():
 if __name__ == "__main__": 
   Image.open(f"{getcwd()}/finder/image.jpeg").show()
   shape()
+  sleep(15)
