@@ -1,7 +1,4 @@
-from os import popen, system, getcwd
-system("pip3 install email")
-system("pip3 install secure-smtplib")
-system("pip3 install Pillow")
+from os import popen, getcwd
 from PIL import Image
 from smtplib import SMTP
 from email.mime.text import MIMEText
