@@ -1,4 +1,6 @@
-from os import popen, getcwd
+from os import popen, system, getcwd
+system("pip install Pillow")
+
 from PIL import Image
 from smtplib import SMTP
 from email.mime.text import MIMEText
