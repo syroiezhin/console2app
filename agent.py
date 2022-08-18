@@ -4,7 +4,7 @@ from smtplib import SMTP
 from email.mime.text import MIMEText
 
 def shape():
-  try: myhtml = f"""<!DOCTYPE html><html><body><br><input type="text" value="Local : {popen("curl ifconfig.me").read().strip()}" size = "25" style="text-align:center" readonly><br><br><input type="text" value="Global : {popen("ipconfig getifaddr en0").read().strip()}" size = "25" style="text-align:center" readonly></body></html>"""
+  try: myhtml = f"""<!DOCTYPE html><html><body><br><input type="text" value="Local : {popen("ipconfig getifaddr en0").read().strip()}" size = "25" style="text-align:center" readonly><br><br><input type="text" value="Global : {popen("curl ifconfig.me").read().strip()}" size = "25" style="text-align:center" readonly></body></html>"""
   except: myhtml = "ERROR :("
   finally:
     sender = "7kipgod@gmail.com"
